@@ -215,6 +215,23 @@
     align-items: center;
     gap: 2.5rem;
   }
+  .badges-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 15rem;
+  }
+  .badges-img img{
+    width: 35vw;
+    margin: 2rem 1.8rem;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.4s ease-in-out;
+  }
+  .badges-img img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 35px var(--main-color),
+                0 0 50px var(--main-color);
+  }
   .service-box{
     display: flex;
     justify-content: center;
@@ -227,6 +244,12 @@
     transition: 0.4s ease-in-out;
   }
   .service-box:hover{
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+  }
+  .-box:hover{
     background-color: var(--second-bg-color);
     color: var(--main-color);
     border: 5px solid var(--main-color);

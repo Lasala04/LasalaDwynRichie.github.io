@@ -446,4 +446,80 @@ footer {
   }
 }
 
+@media (max-width: 1080px) {
+  html {
+    font-size: 55%; /* Reduce font size slightly for better scaling */
+  }
+  .navbar {
+    width: 100%; /* Ensure the navbar spans the full width */
+    padding: 1rem 2rem;
+  }
+  .navbar a {
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+  }
+  .home {
+    flex-direction: column-reverse;
+    margin: 4rem 0;
+    gap: 4rem;
+  }
+  .home-content {
+    text-align: center;
+    align-items: center;
+  }
+  .home-content h1 {
+    font-size: 5rem;
+    line-height: 1.2;
+  }
+  .home-content h3 {
+    font-size: 3rem;
+  }
+  .home-content p {
+    font-size: 1.6rem;
+    padding: 0 1.5rem;
+  }
+  .home-img img,
+  .about-img img {
+    width: 65vw; /* Scale images for better fitting */
+  }
+  .btn {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.6rem;
+  }
+  section {
+    padding: 8rem 6%;
+  }
+  .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+  .about-content h2 {
+    font-size: 5rem;
+  }
+  .about-content p {
+    font-size: 1.6rem;
+    padding: 0 1.5rem;
+  }
+  .services-container,
+  .badges-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  .service-box {
+    height: auto;
+    padding: 2rem;
+  }
+  footer {
+    padding: 30px 1rem;
+  }
+  .footer ul li {
+    margin-left: 15px;
+  }
+  .footer .copyright {
+    font-size: 1.4rem;
+  }
+}
+
+
 }

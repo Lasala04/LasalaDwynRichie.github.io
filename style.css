@@ -9,7 +9,7 @@
   font-family: "Poppins", sans-serif;
 }
 html {
-  font-size: 60%;
+  font-size: 62.5%; /* Base font size for better scaling */
   overflow-x: hidden;
 }
 :root {
@@ -520,6 +520,98 @@ footer {
     font-size: 1.4rem;
   }
 }
+@media (min-width: 1280px) and (max-width: 1366px) {
+  html {
+    font-size: 60%; /* Adjust font size slightly */
+  }
+  .header {
+    padding: 3.5rem 8%;
+  }
+  .navbar a {
+    font-size: 1.8rem;
+    margin-left: 3rem;
+  }
+  .home-content h1 {
+    font-size: 6.5rem;
+    line-height: 1.2;
+  }
+  .home-content h3 {
+    font-size: 3rem;
+  }
+  .home-img img {
+    width: 30vw;
+  }
+  .about-content h2 {
+    font-size: 6rem;
+  }
+  .about-img img {
+    width: 30vw;
+  }
+  .services-container,
+  .badges-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
 
+/* 1366 x 768 Specific Styling */
+@media (max-width: 1366px) and (min-width: 1280px) {
+  html {
+    font-size: 58%; /* Slight reduction for better spacing */
+  }
+  .navbar a {
+    font-size: 1.6rem;
+    margin-left: 2.5rem;
+  }
+  .home-content h1 {
+    font-size: 6rem;
+    line-height: 1.1;
+  }
+  .home-img img {
+    width: 35vw;
+  }
+  .about-content h2 {
+    font-size: 5.5rem;
+  }
+  .about-img img {
+    width: 35vw;
+  }
+  .services-container,
+  .badges-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Existing Breakpoints Adjustments */
+@media (max-width: 1024px) {
+  html {
+    font-size: 55%; /* Optimize for lower resolutions */
+  }
+  .navbar {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  .home-content h1 {
+    font-size: 5rem;
+  }
+  .about-content h2 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 4.5rem;
+  }
+  .about-content h2 {
+    font-size: 4rem;
+  }
+  .services-container,
+  .badges-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
 
 }
